@@ -2,7 +2,7 @@ This project is a local hacking lab based on docker cotainers
 it contains a script launch_lab.sh that automates and make you choose
 what u want to H4ck
 if u runing on windows (time to delete and move to linux) or any other os rather than kali or os pentest dedicated systems
-u can also use option to run arch or kali insode a docker container:
+u can also use option to run arch or kali inside a docker container:
 
 
 #Requirements:
@@ -15,7 +15,7 @@ To start :
        on linux : systemctl start docker 
       
       2 clone the repo 
-      3 cd to the repo
+      3 cd  hacking-lab-on-docker 
       4 Run chmod +x launch_lab.sh  tip : make sure to use the right privileges : simply sudo or create a new user(DockerUser) if u advanced
       5 sudo ./launch_lab.sh and choose what u like to begin with you can choose multiple ones by letting spaces between the options
        exenple : 1 5 (you run kali and dvwa)
