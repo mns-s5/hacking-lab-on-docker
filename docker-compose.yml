@@ -1,0 +1,32 @@
+version: '3.8'
+services:
+  dvwa:
+    image: vulnerables/web-dvwa
+    ports:
+      - "8080:80"
+    restart: unless-stopped
+
+  juice-shop:
+    image: bkimminich/juice-shop
+    ports:
+      - "3000:3000"
+    restart: unless-stopped
+
+  metasploitable2:
+    image: tleemcjr/metasploitable2
+    ports:
+      - "2222:22"
+    restart: unless-stopped
+
+  kali:
+    image: kalilinux/kali-rolling
+    tty: true
+    stdin_open: true
+    command: ["sleep", "infinity"]
+
+  archlinux:
+    image: archlinux:latest
+    tty: true
+    stdin_open: true
+    command: ["sleep", "infinity"]
+
